@@ -4,6 +4,18 @@ const { DataTypes } = require('sequelize')
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('episode', {
-
+    id: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
+      allowNull: false 
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    episode: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   })
 }

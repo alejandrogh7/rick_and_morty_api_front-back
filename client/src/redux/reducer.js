@@ -1,8 +1,5 @@
-const initialState = {
+const initialState = {};
 
-};
+const rootReducer = () => {};
 
-export default function rootReducer() {
-  
-}
-
+export default rootReducer;
