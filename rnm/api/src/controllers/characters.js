@@ -13,6 +13,7 @@ class CharacterModel extends ModelCrud {
       const myCharacters = await this.model.findAll({
         include: {
           model: Episode,
+          as: "episode",
         },
       });
       const apiCharacters = await axios.get(
